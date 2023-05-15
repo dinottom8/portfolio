@@ -80,7 +80,7 @@ nav {
 /*Início Página Um*/
 
 .paginaUm {
-    display: none;
+    display: block;
 }
 
 h1 {
@@ -258,3 +258,38 @@ h3 {
     margin-left: 40px;
 }
 /* Fim Página Dois */
+
+/* Início Página Três */
+
+#mainPaginaTres {
+    display: none;
+}
+
+#mainPaginaDois {
+    display: none;
+}
+
+.cardExperienciaProfissional {
+    width: 1360px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: #811498;
+    padding-left: 15px;
+    border-radius: 16px;
+    transition: ease .1s;
+}
+
+.cardExperienciaProfissional:hover {
+    cursor: pointer;
+    transform: scale(101%);
+    transition: ease .1s;
+}
+
+#divExperienciaProfissional {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Fim Página Três */
