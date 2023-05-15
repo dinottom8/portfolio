@@ -14,17 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-section {
-    position: relative;
-    right: 300px;
-}
-
-#divFotoEForma {
-    position: relative;
-    bottom: 180px;
-    right: 100px;
+    background-image: url(images/backgroundimage.png);
 }
 
 h1 {
@@ -58,30 +48,53 @@ h2 {
     border: none;
     border-radius: 16px;
     font-size: 26px;
+    font-weight: 700;
+    transition: ease-in .1s;
+}
+
+#botaoBaixarCV:hover {
+    cursor: pointer;
+    background-color: #9031a3;
+    transition: ease-in .1s;
+    transform: scale(103%);
+}
+
+#botaoBaixarCV:active {
+    background-color: #a54ab8;
+    transition: ease-in .1s;
+}
+
+#divFotoEForma {
+    padding-left: 100px;
 }
 
 #fotoPrincipal {
-    width: 355px;
+    width: 500px;
     border-radius: 32px;
     position: fixed;
-    z-index: 999;
+    transition: ease-in .2s;
+}
+
+#fotoPrincipal:hover {
+    transition: ease-in .3s;
+    transform: translateX(-10px) translateY(-30px) scale(105%);
+    cursor: pointer;
 }
 
 #formaTrásFoto {
-    width: 355px;
-    height: 355px;
+    width: 500px;
+    height: 500px;
     border-radius: 32px;
     background-color: #811498;
-    position: fixed;
     margin-top: 30px;
     margin-left: 30px;
 }
 
 nav {
     background-color: #811498;
-    width: 53px;
-    height: 248px;
-    border-radius: 32px;
+    width: 70px;
+    height: 300px;
+    border-radius: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -97,10 +110,18 @@ nav {
     background-color: #811498;
     border-radius: 32px;
     height: 12%;
+    transition: ease-in .2s;
 }
 
 .botãoNavSideBar:hover {
-    background-color: #DE95ED;
+    background-color: #9031a3;
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.botãoNavSideBar:active {
+    background-color: #d073e2;
+    transition: ease-in .1s;
 }
 
 #divSocialIcons {
@@ -111,4 +132,15 @@ nav {
     position: absolute;
     bottom: 3%;
     left: 2%;
+}
+
+.socialIconAnimation {
+    transition: ease-in .2s;
+}
+
+.socialIconAnimation:hover {
+    transition: ease-in .2s;
+    filter: brightness(150%);
+    transform: translateY(-3px);
+    cursor: pointer;
 }
