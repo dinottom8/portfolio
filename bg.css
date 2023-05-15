@@ -1,0 +1,93 @@
+
+@keyframes expand {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 1000px;
+    }
+}
+
+.bg-animation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bg-animation .svg-container {
+    position: absolute;
+}
+
+.bg-animation .svg-container path,
+.bg-animation .svg-container rect {
+    fill: #cd4de8;
+}
+
+.bg-animation .dumpbox {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    height: 100px;
+    background-color: white;
+    top: -100px;
+}
+
+#numbers1 svg {
+    animation: bgAnim 100s linear infinite;
+    width: 8px;
+    height: 8px;
+    opacity: 0.125;
+}
+
+#numbers2 svg {
+    animation: bgAnim 50s linear infinite;
+    width: 12px;
+    height: 12px;
+    opacity: 0.25;
+}
+
+#numbers3 svg {
+    animation: bgAnim 25s linear infinite;
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+}
+
+@keyframes bgAnim {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    49% {
+        transform: translate(0, -100vh);
+    }
+
+    50% {
+        transform: translate(100vw, -100vh);
+    }
+
+    51% {
+        transform: translate(100vw, 100vh);
+    }
+
+    52% {
+        transform: translate(0px, 100vh);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+/*# sourceMappingURL=style.css.map */
