@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #1E1E1E;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    position: relative;
+    right: 300px;
+}
+
+#divFotoEForma {
+    position: relative;
+    bottom: 180px;
+    right: 100px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 51px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+}
+
+#divTextoApresentacao {
+    width: 511px;
+    margin-bottom: 35px;
+}
+
+#textoApresentacao {
+    font-size: 26px;
+    color: white;
+}
+
+#botaoBaixarCV {
+    width: 395px;
+    height: 62px;
+    background-color: #811498;
+    color: #DE95ED;
+    border: none;
+    border-radius: 16px;
+    font-size: 26px;
+}
+
+#fotoPrincipal {
+    width: 355px;
+    border-radius: 32px;
+    position: fixed;
+    z-index: 999;
+}
+
+#formaTrásFoto {
+    width: 355px;
+    height: 355px;
+    border-radius: 32px;
+    background-color: #811498;
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+nav {
+    background-color: #811498;
+    width: 53px;
+    height: 248px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 2%;
+    top: 40%;
+}
+
+.botãoNavSideBar{
+    padding: 8px;
+    border: none;
+    background-color: #811498;
+    border-radius: 32px;
+    height: 12%;
+}
+
+.botãoNavSideBar:hover {
+    background-color: #DE95ED;
+}
+
+#divSocialIcons {
+    width: 159px;
+    height: 23px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+}
