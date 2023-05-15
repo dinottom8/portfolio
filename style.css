@@ -188,6 +188,13 @@ h3 {
     height: 120px;
     display: flex;
     padding: 15px;
+    transition: ease .1s;
+}
+
+.cardCertificado:hover {
+    cursor: pointer;
+    transform: scale(102%);
+    transition: ease .1s;
 }
 
 .classeImagemCertificacoes {
@@ -230,6 +237,13 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: ease .2s;
+}
+
+.cardCompetencia:hover {
+    cursor: pointer;
+    transform: scale(103%);
+    transition: ease .2s;
 }
 
 .imagemCompetencia {
