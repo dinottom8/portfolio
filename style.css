@@ -17,6 +17,72 @@ body {
     background-image: url(images/backgroundimage.png);
 }
 
+/* Início Elementos Globais */
+
+nav {
+    background-color: #811498;
+    width: 70px;
+    height: 300px;
+    border-radius: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 2%;
+    top: 40%;
+}
+
+.botãoNavSideBar{
+    padding: 8px;
+    border: none;
+    background-color: #811498;
+    border-radius: 32px;
+    height: 12%;
+    transition: ease-in .2s;
+}
+
+.botãoNavSideBar:hover {
+    background-color: #9031a3;
+    cursor: pointer;
+    transition: ease-in .2s;
+    transform: scale(120%);
+}
+
+.botãoNavSideBar:active {
+    background-color: #d073e2;
+    transition: ease-in .1s;
+}
+
+#divSocialIcons {
+    width: 159px;
+    height: 23px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+}
+
+.socialIconAnimation {
+    transition: ease-in .2s;
+}
+
+.socialIconAnimation:hover {
+    transition: ease-in .2s;
+    filter: brightness(150%);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/* Fim Elementos Globais */
+
+/*Início Página Um*/
+
+.paginaUm {
+    display: none;
+}
+
 h1 {
     font-weight: 800;
     font-size: 51px;
@@ -90,57 +156,5 @@ h2 {
     margin-left: 30px;
 }
 
-nav {
-    background-color: #811498;
-    width: 70px;
-    height: 300px;
-    border-radius: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    right: 2%;
-    top: 40%;
-}
+/* Fim Página Um */
 
-.botãoNavSideBar{
-    padding: 8px;
-    border: none;
-    background-color: #811498;
-    border-radius: 32px;
-    height: 12%;
-    transition: ease-in .2s;
-}
-
-.botãoNavSideBar:hover {
-    background-color: #9031a3;
-    cursor: pointer;
-    transition: ease-in .2s;
-}
-
-.botãoNavSideBar:active {
-    background-color: #d073e2;
-    transition: ease-in .1s;
-}
-
-#divSocialIcons {
-    width: 159px;
-    height: 23px;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 3%;
-    left: 2%;
-}
-
-.socialIconAnimation {
-    transition: ease-in .2s;
-}
-
-.socialIconAnimation:hover {
-    transition: ease-in .2s;
-    filter: brightness(150%);
-    transform: translateY(-3px);
-    cursor: pointer;
-}
