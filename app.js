@@ -1,8 +1,10 @@
 const botaoPaginaInicial = document.getElementById("botaoPaginaInicial");
 const botaoPaginaCompetencias = document.getElementById("botaoPaginaCompetencias");
+const botaoPaginaExperiencias = document.getElementById("botaoPaginaExperiencias");
 
 botaoPaginaInicial.addEventListener("click", chamarPaginaUm);
 botaoPaginaCompetencias.addEventListener("click", chamarPaginaDois);
+botaoPaginaExperiencias.addEventListener("click", chamarPaginaTres);
 
 function chamarPaginaUm () {
     document.getElementById("divFotoEForma").style.display = "block";
@@ -14,4 +16,10 @@ function chamarPaginaDois () {
     document.getElementById("divFotoEForma").style.display = "none";
     document.getElementById("divApresentacaoPaginaUm").style.display = "none";
     document.getElementById("mainPaginaDois").style.display = "flex";
+}
+
+function chamarPaginaTres () {
+    document.getElementById("divFotoEForma").style.display = "none";
+    document.getElementById("divApresentacaoPaginaUm").style.display = "none";
+    document.getElementById("mainPaginaDois").style.display = "none";
 }
