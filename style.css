@@ -39,6 +39,7 @@ nav {
     border-radius: 32px;
     height: 12%;
     transition: ease-in .2s;
+    display: flex;
 }
 
 .botãoNavSideBar:hover {
@@ -306,6 +307,11 @@ h3 {
 
 #mainPaginaCinco {
     display: none;
+    flex-direction: column;
+}
+
+#formPaginaCinco {
+    display: flex;
     background-color: #811498;
     border-radius: 16px;
     width: 1350px;
