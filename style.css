@@ -8,13 +8,12 @@
 }
 
 body {
-    background-color: #1E1E1E;
+    background-color: #0c0c0c;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/backgroundimage.png);
 }
 
 /* Início Elementos Globais */
