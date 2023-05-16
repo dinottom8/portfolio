@@ -301,3 +301,99 @@ h3 {
 }
 
 /* Fim Página Quatro */
+
+/* Início Página Cinco */
+
+#mainPaginaCinco {
+    display: none;
+    background-color: #811498;
+    border-radius: 16px;
+    width: 1350px;
+    height: 400px;
+    flex-direction: column;
+}
+
+#preenchimento {
+    display: flex;
+    height: 75%;
+}
+
+.campoPrenchimento {
+    background-color: #811498;
+    border: 2px solid #DE95ED;
+    border-radius: 8px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#colunaPrenchimentoEsquerda {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#colunaPrenchimentoDireita {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    color: #DE95ED;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#conteudoInput {
+    background-color: #811498;
+    border-radius: 8px;
+    border: 2px solid #DE95ED;
+    color: white;
+    width: 88%;
+    height: 80%;
+}
+
+#indicadorTextArea {
+    color: #DE95ED;
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 445px;
+    margin-bottom: 5px;
+}
+
+#botaoContatoEnviar {
+    border: none;
+    background-color: #5b0d69;
+    color: #DE95ED;
+    font-size: 22px;
+    font-weight: 700;
+    width: 90%;
+    height: 50px;
+    border-radius: 16px;
+    transition: ease .1s;
+}
+
+#botaoContatoEnviar:hover {
+    transform: scale(103%);
+    transition: ease .1s;
+    background-color: #6d107e;
+}
+
+#botaoContatoEnviar:active {
+    background-color: #b953ce;
+}
+
+#divBotaoContato {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;    
+}
