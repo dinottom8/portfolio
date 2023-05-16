@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
-:root{
-    --color1: #1E1E1E;
-    --color2: #811498;
-    --color3: #9031a3;
-    --color4: #d073e2;
-    --color5: #DE95ED;
-    --color6: #a54ab8;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -17,10 +8,7 @@
 }
 
 body {
-<<<<<<< HEAD
-=======
-    background-color: var(--color1);
->>>>>>> a085198da4d980a801bd43b8d6d8e40e65dcfa93
+    background-color: #0c0c0c;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -31,7 +19,7 @@ body {
 /* Início Elementos Globais */
 
 nav {
-    background-color: var(--color2);
+    background-color: #811498;
     width: 70px;
     height: 300px;
     border-radius: 50vh;
@@ -47,21 +35,21 @@ nav {
 .botãoNavSideBar{
     padding: 8px;
     border: none;
-    background-color: var(--color2);
+    background-color: #811498;
     border-radius: 32px;
     height: 12%;
     transition: ease-in .2s;
 }
 
 .botãoNavSideBar:hover {
-    background-color: var(--color3);
+    background-color: #9031a3;
     cursor: pointer;
     transition: ease-in .2s;
     transform: scale(120%);
 }
 
 .botãoNavSideBar:active {
-    background-color: var(--color4);
+    background-color: #d073e2;
     transition: ease-in .1s;
 }
 
@@ -120,8 +108,8 @@ h2 {
 #botaoBaixarCV {
     width: 395px;
     height: 62px;
-    background-color: var(--color2);
-    color: var(--color5);
+    background-color: #811498;
+    color: #DE95ED;
     border: none;
     border-radius: 16px;
     font-size: 26px;
@@ -131,13 +119,13 @@ h2 {
 
 #botaoBaixarCV:hover {
     cursor: pointer;
-    background-color: var(--color3);
+    background-color: #9031a3;
     transition: ease-in .1s;
     transform: scale(103%);
 }
 
 #botaoBaixarCV:active {
-    background-color: var(--color6);
+    background-color: #a54ab8;
     transition: ease-in .1s;
 }
 
@@ -162,7 +150,7 @@ h2 {
     width: 500px;
     height: 500px;
     border-radius: 32px;
-    background-color: var(--color2);
+    background-color: #811498;
     margin-top: 30px;
     margin-left: 30px;
 }
@@ -193,7 +181,7 @@ h3 {
 }
 
 .cardCertificado {
-    background-color: var(--color2);
+    background-color: #811498;
     border-radius: 16px;
     width: 578px;
     height: 120px;
@@ -218,18 +206,18 @@ h3 {
 .nomeCertificacao {
     font-size: 24px;
     font-weight: bold;
-    color: var(--color5);
+    color: #DE95ED;
 }
 
 .duracaoCertificacao {
     font-size: 18px;
-    color: var(--color5);
+    color: #DE95ED;
     font-weight: 600;
 }
 
 .institutoCertificacao {
     font-size: 18px;
-    color: var(--color5);
+    color: #DE95ED;
     font-weight: 600;
 }
 
@@ -244,7 +232,7 @@ h3 {
     width: 120px;
     height: 120px;
     border-radius: 16px;
-    background-color: var(--color2);
+    background-color: #811498;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,7 +273,7 @@ h3 {
     height: 120px;
     display: flex;
     align-items: center;
-    background-color: var(--color2);
+    background-color: #811498;
     padding-left: 15px;
     border-radius: 16px;
     transition: ease .1s;
