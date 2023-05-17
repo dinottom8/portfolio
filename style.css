@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
+:root{
+    --color1: #1E1E1E;
+    --color2: #811498;
+    --color3: #9031a3;
+    --color4: #a54ab8;
+    --color5: #d073e2;
+    --color6: #DE95ED;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -299,8 +308,30 @@ h3 {
 #mainPaginaQuatro {
     display: none;
     flex-direction: column;
+    width: 100%;
 }
 
+.projeto-card{
+    width: 300px;
+    height: 400px;
+    background-color: var(--color3);
+    border-radius: 16px;
+    color: var(--color6);
+}
+
+.projeto-card .card-img-top{
+    border-radius: 16px 16px 0 0;
+}
+
+.projeto-card .card-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.projeto-card .card-text{
+    opacity: .5;
+    overflow: hidden;
+}
 /* Fim Página Quatro */
 
 /* Início Página Cinco */
@@ -403,3 +434,4 @@ label {
     align-items: center;
     margin-top: 10px;    
 }
+
