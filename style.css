@@ -57,6 +57,10 @@ nav {
     display: flex;
 }
 
+#botaoPaginaInicial {
+    background-color: #DE95ED;
+}
+
 .botãoNavSideBar:hover {
     background-color: #9031a3;
     cursor: pointer;
