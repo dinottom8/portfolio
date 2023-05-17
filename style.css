@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
-:root{
+:root {
     --color1: #1E1E1E;
     --color2: #811498;
     --color3: #9031a3;
@@ -41,7 +41,7 @@ nav {
     top: 40%;
 }
 
-.botãoNavSideBar{
+.botãoNavSideBar {
     padding: 8px;
     border: none;
     background-color: #811498;
@@ -266,6 +266,7 @@ h3 {
     flex-wrap: wrap;
     margin-left: 40px;
 }
+
 /* Fim Página Dois */
 
 /* Início Página Três */
@@ -311,7 +312,7 @@ h3 {
     width: 100%;
 }
 
-.projeto-card{
+.projeto-card {
     width: 300px;
     height: 400px;
     background-color: var(--color3);
@@ -319,19 +320,56 @@ h3 {
     color: var(--color6);
 }
 
-.projeto-card .card-img-top{
+.projeto-card .card-img-top {
     border-radius: 16px 16px 0 0;
 }
 
-.projeto-card .card-title{
+.projeto-card .card-title {
     font-size: 24px;
     font-weight: bold;
 }
 
-.projeto-card .card-text{
+.projeto-card .card-text {
+    display: block;
     opacity: .5;
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
+.carousel-prev-custom{
+    position: absolute;
+    top: calc(50% - 26px);
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    left: 7.5%;
+}
+
+.carousel-next-custom{
+    position: absolute;
+    top: calc(50% - 26px);
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    right: 7.5%;
+}
+
+#mainPaginaQuatro i{
+    font-size: 52px;
+    color: var(--color2);
+}
+
+#mainPaginaQuatro i:hover{
+    color: var(--color3);
+}
+
 /* Fim Página Quatro */
 
 /* Início Página Cinco */
@@ -432,6 +470,5 @@ label {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
-
