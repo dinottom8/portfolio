@@ -25,6 +25,12 @@ body {
     align-items: center;
 }
 
+#mainPaginaUm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Início Elementos Globais */
 
 nav {

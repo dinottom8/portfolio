@@ -11,33 +11,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
 
     <!--Texto, título, subtítulo e botão de baixar CV-->
 
-    <div class="paginaUm" id="divApresentacaoPaginaUm">
-        <h1>Oi, sou Mateus!</h1>
-        <h2>Desenvolvedor Front-End</h2>
-        <div id="divTextoApresentacao">
-            <p id="textoApresentacao">Aplicações modernas, responsivas, com experiências incríveis e
-                acessibilidade são o meu objetivo. Vamos fazer algo grande juntos!
-            </p>
+    <div id="mainPaginaUm" class="animate__animated animate__fadeIn">
+        <div class="paginaUm" id="divApresentacaoPaginaUm">
+            <h1>Oi, sou Mateus!</h1>
+            <h2>Desenvolvedor Front-End</h2>
+            <div id="divTextoApresentacao">
+                <p id="textoApresentacao">Aplicações modernas, responsivas, com experiências incríveis e
+                    acessibilidade são o meu objetivo. Vamos fazer algo grande juntos!
+                </p>
+            </div>
+            <button id="botaoBaixarCV">Baixar CV</button>
         </div>
-        <button id="botaoBaixarCV">Baixar CV</button>
-    </div>
-
-    <!--Foto principal e forma de trás-->
-
-    <div id="divFotoEForma" class="paginaUm">
-        <img id="fotoPrincipal" src="images/pexels-jonathan-borba-16147939.jpg" alt="Foto perfil principal">
-        <div id="formaTrásFoto"></div>
+    
+        <!--Foto principal e forma de trás-->
+    
+        <div id="divFotoEForma" class="paginaUm">
+            <img id="fotoPrincipal" src="images/pexels-jonathan-borba-16147939.jpg" alt="Foto perfil principal">
+            <div id="formaTrásFoto"></div>
+        </div>
     </div>
 
     <!--Página 2-->
 
-    <div id="mainPaginaDois">
+    <div id="mainPaginaDois" class="animate__animated animate__fadeIn">
         <!--Certificações-->
         <div>
             <h3>Certificações</h3>
@@ -120,7 +123,7 @@
 
     <!--Página 3-->
 
-    <div id="mainPaginaTres">
+    <div id="mainPaginaTres" class="animate__animated animate__fadeIn">
         <h3>Experiência Profissional</h3>
         <div id="divExperienciaProfissional">
             <div class="cardExperienciaProfissional">
@@ -152,7 +155,7 @@
 
     <!--Página 4-->
 
-    <div id="mainPaginaQuatro">
+    <div id="mainPaginaQuatro" class="animate__animated animate__fadeIn">
         <h3>Projetos</h3>
         <div id="carouselExample" class="carousel slide w-100">
             <div class="carousel-inner">
@@ -282,7 +285,7 @@
 
     <!--Página 5-->
 
-    <div id="mainPaginaCinco">
+    <div id="mainPaginaCinco" class="animate__animated animate__fadeIn">
 
         <h3>Fale comigo!</h3>
 

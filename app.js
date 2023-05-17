@@ -11,8 +11,7 @@ botaoPaginaProjetos.addEventListener("click", chamarPaginaQuatro);
 botaoPaginaContato.addEventListener("click", chamarPaginaCinco);
 
 function chamarPaginaUm () {
-    document.getElementById("divFotoEForma").style.display = "block";
-    document.getElementById("divApresentacaoPaginaUm").style.display = "block";
+    document.getElementById("mainPaginaUm").style.display = "flex";
     document.getElementById("mainPaginaDois").style.display = "none";
     document.getElementById("mainPaginaTres").style.display = "none";
     document.getElementById("mainPaginaQuatro").style.display = "none";
@@ -20,8 +19,7 @@ function chamarPaginaUm () {
 }
 
 function chamarPaginaDois () {
-    document.getElementById("divFotoEForma").style.display = "none";
-    document.getElementById("divApresentacaoPaginaUm").style.display = "none";
+    document.getElementById("mainPaginaUm").style.display = "none";
     document.getElementById("mainPaginaQuatro").style.display = "none";
     document.getElementById("mainPaginaTres").style.display = "none";
     document.getElementById("mainPaginaDois").style.display = "flex";
@@ -29,8 +27,7 @@ function chamarPaginaDois () {
 }
 
 function chamarPaginaTres () {
-    document.getElementById("divFotoEForma").style.display = "none";
-    document.getElementById("divApresentacaoPaginaUm").style.display = "none";
+    document.getElementById("mainPaginaUm").style.display = "none";
     document.getElementById("mainPaginaDois").style.display = "none";
     document.getElementById("mainPaginaQuatro").style.display = "none";
     document.getElementById("mainPaginaTres").style.display = "block";
@@ -38,8 +35,7 @@ function chamarPaginaTres () {
 }
 
 function chamarPaginaQuatro () {
-    document.getElementById("divFotoEForma").style.display = "none";
-    document.getElementById("divApresentacaoPaginaUm").style.display = "none";
+    document.getElementById("mainPaginaUm").style.display = "none";
     document.getElementById("mainPaginaDois").style.display = "none";
     document.getElementById("mainPaginaTres").style.display = "none";
     document.getElementById("mainPaginaQuatro").style.display = "flex";
@@ -47,8 +43,7 @@ function chamarPaginaQuatro () {
 }
 
 function chamarPaginaCinco () {
-    document.getElementById("divFotoEForma").style.display = "none";
-    document.getElementById("divApresentacaoPaginaUm").style.display = "none";
+    document.getElementById("mainPaginaUm").style.display = "none";
     document.getElementById("mainPaginaDois").style.display = "none";
     document.getElementById("mainPaginaTres").style.display = "none";
     document.getElementById("mainPaginaQuatro").style.display = "none";
