@@ -329,10 +329,14 @@ h3 {
     background-color: var(--color3);
     border-radius: 16px;
     color: var(--color6);
+    border: none;
 }
 
-.projeto-card .card-img-top {
+.projeto-card img {
     border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    height: 300px;
+    
 }
 
 .projeto-card .card-title {
@@ -631,6 +635,14 @@ label {
 
     /* Início Página Quatro*/
 
+    .projeto-card{
+        width: 224px;
+        height: 322px;
+    }
+
+    .projeto-card img{
+        height: 224px;
+    }
     
 
     /* Fim Página Quatro*/

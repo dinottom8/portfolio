@@ -1,5 +1,34 @@
 {
-    "data":{
-        "text": "Hello World"
-    }
+    "projetos": [
+        {
+            "title": "Nerdlax",
+            "image": "images/bic2.jpg",
+            "text": "A wild Nerdlax blocks your path."
+        },
+        {
+            "title": "Tronchu",
+            "image": "images/bic1.jpeg",
+            "text": "Pokemon inside a Computer."
+        },
+        {
+            "title": "Itsa Me Mario!",
+            "image": "images/mario.webp",
+            "text": "His name is Mario."
+        },
+        {
+            "title": "Nerdlax",
+            "image": "images/bic2.jpg",
+            "text": "A wild Nerdlax blocks your path."
+        },
+        {
+            "title": "Tronchu",
+            "image": "images/bic1.jpeg",
+            "text": "Pokemon inside a Computer."
+        },
+        {
+            "title": "Itsa Me Mario!",
+            "image": "images/mario.webp",
+            "text": "His name is Mario."
+        }
+    ]
 }

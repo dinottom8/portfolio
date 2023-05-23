@@ -29,9 +29,24 @@
             width: 100%;
         }
 
-        i{
+        i {
             color: #cd4de8;
             font-size: 70px;
+        }
+
+        
+        @media screen and (max-width: 1280px) {
+
+            .projeto-card{
+                width: 188px;
+                height: 224px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .carousel-next-custom, .carousel-prev-custom {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -40,150 +55,7 @@
 
     <div class="container">
         <swiper-container class="mySwiper" init="false">
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="card projeto-card">
-                    <img src="images/bic2.jpg" alt="" class="card-img-top ratio ratio-1x1">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Projeto
-                        </h2>
-                        <small class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula arcu,
-                            euismod id
-                            porta eget,
-                            tristique non dui. Duis diam velit, pharetra a est nec.
-                        </small>
-                    </div>
-                </div>
-            </swiper-slide>
+            
         </swiper-container>
         <button class="btn carousel-prev-custom" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <i class="bi bi-arrow-left-circle-fill"></i>
@@ -196,15 +68,18 @@
         </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="bg.js"></script>
 
-
+    <script src="data.js"></script>
     <script>
         const swiperEl = document.querySelector('swiper-container');
 
         const params = {
             centeredSlides: false,
 
-            
+
             navigation: {
                 nextEl: '.carousel-next-custom',
                 prevEl: '.carousel-prev-custom',
@@ -219,10 +94,10 @@
                     slidesPerView: 4,
                     slidesPerGroup: 4,
                 },
-            },
-            scrollbar: true,
-            pagination: {
-                clickable: true,
+                480: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                }
             },
         };
 
