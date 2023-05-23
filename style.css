@@ -42,7 +42,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: fixed;
     right: 2%;
     top: 40%;
 }
@@ -78,7 +78,7 @@ nav {
     height: 23px;
     display: flex;
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
     bottom: 3%;
     left: 2%;
 }
@@ -350,7 +350,7 @@ h3 {
     overflow: hidden;
 }
 
-.carousel-prev-custom{
+.carousel-prev-custom {
     position: absolute;
     top: calc(50% - 26px);
     padding: 0;
@@ -361,7 +361,7 @@ h3 {
     left: 7.5%;
 }
 
-.carousel-next-custom{
+.carousel-next-custom {
     position: absolute;
     top: calc(50% - 26px);
     padding: 0;
@@ -372,12 +372,12 @@ h3 {
     right: 7.5%;
 }
 
-#mainPaginaQuatro i{
+#mainPaginaQuatro i {
     font-size: 52px;
     color: var(--color2);
 }
 
-#mainPaginaQuatro i:hover{
+#mainPaginaQuatro i:hover {
     color: var(--color3);
 }
 
