@@ -635,6 +635,10 @@ label {
 
     /* Início Página Quatro*/
 
+    #mainPaginaQuatro {
+        display: none;
+    }
+
     .projeto-card{
         width: 224px;
         height: 322px;
@@ -716,8 +720,12 @@ label {
 @media screen and (max-width: 1000px) { /* Versão Mobile*/
     /* body */
 
+    .bg-animation {
+        display: none;
+    }
+
     body {
-        background-color: #0c0c0c;
+        background-image: url(images/framebackground.png);
         width: 100%;
         height: fit-content;
         flex-direction: column;
