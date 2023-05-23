@@ -21,7 +21,6 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -184,7 +183,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 h3 {
@@ -686,8 +685,9 @@ label {
 
     body {
         background-color: #0c0c0c;
-        width: 980px;
-        height: 100vh;
+        width: 100%;
+        height: 2500px;
+        flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -750,14 +750,14 @@ label {
         
         #divFotoEForma {
             padding-left: 0px;
-            position: fixed;
-            bottom: 570px;
-            display: none;
+            position: absolute;
+            top: 20px;
         }
         
         #fotoPrincipal {
             width: 162px;
             border-radius: 24px;
+            position: absolute;
         }
         
         #formaTrásFoto {
@@ -777,11 +777,13 @@ label {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
         
         h3 {
             font-size: 20px;
             margin-bottom: 40px;
+            margin-top: 40px;
         }
         
         #divDosCertificados {
@@ -824,8 +826,7 @@ label {
         }
         
         #linhaVerticalPaginaDois {
-            height: 170px;
-            transform: rotate(90deg);
+            display: none;
         }
         
         .cardCompetencia {
