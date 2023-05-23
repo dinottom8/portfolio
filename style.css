@@ -686,7 +686,7 @@ label {
     body {
         background-color: #0c0c0c;
         width: 100%;
-        height: 2500px;
+        height: fit-content;
         flex-direction: column;
         display: flex;
         justify-content: center;
@@ -702,7 +702,13 @@ label {
         }
         
         #divSocialIcons {
-            display: none;
+            position: static;
+            margin-top: 30px;
+            background-color: #811498;
+            width: 200px;
+            height: 40px;
+            border-radius: 50vh;
+            margin-bottom: 30px;
         }
 
     /* fim elementos globais*/
@@ -714,6 +720,10 @@ label {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+
+        #divApresentacaoPaginaUm {
+            order: 2;
         }
         
         h1 {
@@ -750,8 +760,10 @@ label {
         
         #divFotoEForma {
             padding-left: 0px;
-            position: absolute;
-            top: 20px;
+            display: flex;
+            order: 1;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
         
         #fotoPrincipal {
@@ -944,11 +956,11 @@ label {
         }
         
         #indicadorTextArea {
-            color: #DE95ED;
             font-size: 14px;
             font-weight: 600;
-            padding-right: 302px;
             margin-bottom: 5px;
+            padding-right: 0;
+            margin-right: 305px;
         }
         
         #botaoContatoEnviar {
