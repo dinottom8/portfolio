@@ -323,6 +323,20 @@ h3 {
     width: 100%;
 }
 
+swiper-container {
+    width: 100%;
+    height: 100%;
+    color: #cd4de8;
+}
+
+swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 .projeto-card {
     width: 300px;
     height: 400px;
@@ -336,7 +350,7 @@ h3 {
     border-radius: 16px 16px 0 0;
     object-fit: cover;
     height: 300px;
-    
+
 }
 
 .projeto-card .card-title {
@@ -488,118 +502,119 @@ label {
     margin-top: 10px;
 }
 
-/* Fim página 5*/ 
+/* Fim página 5*/
 
-@media screen and (max-width: 1440px) { /* Versão Tablet*/
+@media screen and (max-width: 1440px) {
+    /* Versão Tablet*/
     /*  Inicio Elementos Globais */
 
     /* Início Elementos Globais */
 
-        nav {
-            background-color: #811498;
-            width: 70px;
-            height: 300px;
-            border-radius: 50vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            position: fixed;
-            right: 2%;
-            top: 35%;
-        }
+    nav {
+        background-color: #811498;
+        width: 70px;
+        height: 300px;
+        border-radius: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        right: 2%;
+        top: 35%;
+    }
 
-    /* Fim Elementos Globais*/ 
+    /* Fim Elementos Globais*/
 
     /* Inicio Página 1*/
     h1 {
         font-size: 35px;
         margin-bottom: 17px;
     }
-    
+
     h2 {
         font-size: 28px;
         margin-bottom: 14px;
     }
-    
+
     #divTextoApresentacao {
         width: 357px;
         margin-bottom: 24px;
     }
-    
+
     #textoApresentacao {
         font-size: 26px;
         color: white;
     }
-    
+
     #botaoBaixarCV {
         width: 276px;
         height: 43px;
         border-radius: 14px;
         font-size: 18px;
     }
-    
+
     #divFotoEForma {
         padding-left: 100px;
     }
-    
+
     #fotoPrincipal {
         width: 350px;
     }
-    
+
     #formaTrásFoto {
         width: 350px;
         height: 350px;
         margin-top: 30px;
         margin-left: 30px;
     }
-    
+
     /* Fim Página Um */
 
     /* Início Página Dois*/
-    
+
     h3 {
         font-size: 25px;
         margin-bottom: 40px;
     }
-    
+
     #divDosCertificados {
         gap: 10px;
         margin-right: 40px;
     }
-    
+
     .cardCertificado {
         border-radius: 14px;
         width: 404px;
         height: 84px;
         padding: 11px;
     }
-    
+
     .classeImagemCertificacoes {
         border-radius: 12px;
         width: 63px;
         height: 63px;
     }
-    
+
     .nomeCertificacao {
         font-size: 18px;
     }
-    
+
     .duracaoCertificacao {
         font-size: 14px;
     }
-    
+
     .institutoCertificacao {
         font-size: 14px;
     }
-    
+
     #linhaVerticalPaginaDois {
         background-color: rgba(255, 255, 255, 0.5);
         width: 1pt;
         height: 420px;
-    
+
     }
-    
+
     .cardCompetencia {
         width: 84px;
         height: 84px;
@@ -609,7 +624,7 @@ label {
     .imagemCompetencia {
         border-radius: 12px;
     }
-    
+
     #divCardsCompetencias {
         gap: 10px;
         width: 403px;
@@ -619,14 +634,14 @@ label {
     /* Fim Página Dois*/
 
     /* Inicio Página Três*/
-    
+
     .cardExperienciaProfissional {
         width: 800px;
         height: 84px;
         padding-left: 11px;
         border-radius: 12px;
     }
-    
+
     #divExperienciaProfissional {
         gap: 10px;
     }
@@ -635,36 +650,44 @@ label {
 
     /* Início Página Quatro*/
 
-    .projeto-card{
-        width: 224px;
-        height: 322px;
+    #mainPaginaQuatro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .projeto-card img{
+    .projeto-card {
+        width: 224px;
+        height: 322px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projeto-card img {
         height: 224px;
     }
-    
+
 
     /* Fim Página Quatro*/
 
     /* Início Página Cinco */
-    
+
     #formPaginaCinco {
         width: 855px;
         height: 280px;
         margin-right: 0;
     }
-    
+
     #preenchimento {
         display: flex;
         height: 70%;
     }
-    
+
     .campoPrenchimento {
         width: 210px;
         height: 40px;
     }
-    
+
     #conteudoInput {
         width: 88%;
         height: 130px;
@@ -672,13 +695,13 @@ label {
         position: relative;
         bottom: 15px;
     }
-    
+
     #indicadorTextArea {
         position: relative;
         left: 77px;
         bottom: 5px;
     }
-    
+
     #botaoContatoEnviar {
         border: none;
         background-color: #5b0d69;
@@ -690,17 +713,17 @@ label {
         border-radius: 16px;
         transition: ease .1s;
     }
-    
+
     #botaoContatoEnviar:hover {
         transform: scale(103%);
         transition: ease .1s;
         background-color: #6d107e;
     }
-    
+
     #botaoContatoEnviar:active {
         background-color: #b953ce;
     }
-    
+
     #divBotaoContato {
         display: flex;
         width: 100%;
@@ -713,7 +736,8 @@ label {
 
 }
 
-@media screen and (max-width: 1000px) { /* Versão Mobile*/
+@media screen and (max-width: 1000px) {
+    /* Versão Mobile*/
     /* body */
 
     body {
@@ -730,279 +754,284 @@ label {
 
     /* inicio elementos globais */
 
-        nav {
-            display: none;
-        }
-        
-        #divSocialIcons {
-            position: static;
-            margin-top: 30px;
-            background-color: #811498;
-            width: 200px;
-            height: 40px;
-            border-radius: 50vh;
-            margin-bottom: 30px;
-        }
+    nav {
+        display: none;
+    }
+
+    #divSocialIcons {
+        position: static;
+        margin-top: 30px;
+        background-color: #811498;
+        width: 200px;
+        height: 40px;
+        border-radius: 50vh;
+        margin-bottom: 30px;
+    }
 
     /* fim elementos globais*/
 
     /* inicio pagina um*/
 
-        #mainPaginaUm {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+    #mainPaginaUm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-        #divApresentacaoPaginaUm {
-            order: 2;
-        }
-        
-        h1 {
-            font-size: 36px;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        
-        h2 {
-            font-size: 18px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        #divTextoApresentacao {
-            width: 311px;
-            height: 118px;
-            margin-bottom: 35px;
-        }
-        
-        #textoApresentacao {
-            font-size: 22px;
-            text-align: center;
-        }
-        
-        #botaoBaixarCV {
-            width: 276px;
-            height: 34px;
-            border-radius: 12px;
-            font-size: 22px;
-            margin-left: 20px;
-            margin-top: 40px;
-        }
-        
-        #divFotoEForma {
-            padding-left: 0px;
-            display: flex;
-            order: 1;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        
-        #fotoPrincipal {
-            width: 162px;
-            border-radius: 24px;
-            position: absolute;
-        }
-        
-        #formaTrásFoto {
-            width: 162px;
-            height: 162px;
-            border-radius: 24px;
-            background-color: #811498;
-            margin-top: 15px;
-            margin-left: 15px;
-        }
+    #divApresentacaoPaginaUm {
+        order: 2;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #divTextoApresentacao {
+        width: 311px;
+        height: 118px;
+        margin-bottom: 35px;
+    }
+
+    #textoApresentacao {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #botaoBaixarCV {
+        width: 276px;
+        height: 34px;
+        border-radius: 12px;
+        font-size: 22px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    #divFotoEForma {
+        padding-left: 0px;
+        display: flex;
+        order: 1;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #fotoPrincipal {
+        width: 162px;
+        border-radius: 24px;
+        position: absolute;
+    }
+
+    #formaTrásFoto {
+        width: 162px;
+        height: 162px;
+        border-radius: 24px;
+        background-color: #811498;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
 
     /* fim pagina um*/
-    
+
     /* inicio pagina dois*/
 
-        #mainPaginaDois {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-        h3 {
-            font-size: 20px;
-            margin-bottom: 40px;
-            margin-top: 40px;
-        }
-        
-        #divDosCertificados {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-right: 0;
-        }
-        
-        .cardCertificado {
-            border-radius: 12px;
-            width: 263px;
-            height: 78px;
-            padding: 7px;
-        }
-        
-        .classeImagemCertificacoes {
-            border-radius: 12px;
-            width: 46px;
-            height: 46px;
-            margin-right: 25px;
-            position: relative;
-            top: 8px;
-            left: 10px;
-        }
-        
-        .nomeCertificacao {
-            font-size: 14px;
-        }
-        
-        .duracaoCertificacao {
-            font-size: 14px;
-            margin-bottom: 0;
-            padding-bottom: 0;
-            
-        }
-        
-        .institutoCertificacao {
-            font-size: 14px;
-        }
-        
-        #linhaVerticalPaginaDois {
-            display: none;
-        }
-        
-        .cardCompetencia {
-            width: 61px;
-            height: 61px;
-            border-radius: 12px;
-            background-color: #811498;
-        }
-        
-        .imagemCompetencia {
-            border-radius: 12px;
-            width: 45px;
-        }
-        
-        #divCardsCompetencias {
-            display: flex;
-            gap: 15px;
-            width: 227px;
-            flex-wrap: wrap;
-            margin-left: 0px;
-        }
+    #mainPaginaDois {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    #divDosCertificados {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-right: 0;
+    }
+
+    .cardCertificado {
+        border-radius: 12px;
+        width: 263px;
+        height: 78px;
+        padding: 7px;
+    }
+
+    .classeImagemCertificacoes {
+        border-radius: 12px;
+        width: 46px;
+        height: 46px;
+        margin-right: 25px;
+        position: relative;
+        top: 8px;
+        left: 10px;
+    }
+
+    .nomeCertificacao {
+        font-size: 14px;
+    }
+
+    .duracaoCertificacao {
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+    }
+
+    .institutoCertificacao {
+        font-size: 14px;
+    }
+
+    #linhaVerticalPaginaDois {
+        display: none;
+    }
+
+    .cardCompetencia {
+        width: 61px;
+        height: 61px;
+        border-radius: 12px;
+        background-color: #811498;
+    }
+
+    .imagemCompetencia {
+        border-radius: 12px;
+        width: 45px;
+    }
+
+    #divCardsCompetencias {
+        display: flex;
+        gap: 15px;
+        width: 227px;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
 
     /* fim pagina dois*/
 
     /* início página três*/
 
-        #mainPaginaTres {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .cardExperienciaProfissional {
-            width: 264px;
-            height: 78px;
-            display: flex;
-            align-items: center;
-            background-color: #811498;
-            padding-left: 0;
-            border-radius: 12px;
-        }
+    #mainPaginaTres {
+        display: flex;
+        flex-direction: column;
+    }
 
-        .cardExperienciaProfissional > img {
-            top: 1px;
-            margin-left: 5px;
-        } 
-        
-        #divExperienciaProfissional {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+    .cardExperienciaProfissional {
+        width: 264px;
+        height: 78px;
+        display: flex;
+        align-items: center;
+        background-color: #811498;
+        padding-left: 0;
+        border-radius: 12px;
+    }
 
-    /* fim página três*/ 
-    
+    .cardExperienciaProfissional>img {
+        top: 1px;
+        margin-left: 5px;
+    }
+
+    #divExperienciaProfissional {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* fim página três*/
+
     /* início página quatro*/
+
+    
+    .carousel-next-custom, .carousel-prev-custom {
+        display: none;
+    }
 
     /* fim página quatro*/
 
     /* início página cinco*/
 
-        #mainPaginaCinco {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        #formPaginaCinco {
-            display: flex;
-            background-color: #811498;
-            border-radius: 12px;
-            width: 307px;
-            height: 500px;
-            flex-direction: column;
-        }
-        
-        #preenchimento {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .campoPrenchimento {
-            border-radius: 8px;
-            width: 260px;
-            height: 40px;
-            margin-bottom: 0px;
-        }
-        
-        #colunaPrenchimentoEsquerda {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 0px;
-        }
-        
-        #colunaPrenchimentoDireita {
-            width: 260px;
-            height: 155px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-        }
-        
-        label {
-            display: block;
-            font-size: 14px;
-            margin-top: 5px;
-        }
-        
-        #conteudoInput {
-            width: 100%;
-            margin-left: 50px;
-        }
-        
-        #indicadorTextArea {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 5px;
-            padding-right: 0;
-            margin-right: 305px;
-        }
-        
-        #botaoContatoEnviar {
-            width: 260px;
-            height: 46px;
-            border-radius: 12px;
-            position: relative;
-            top: 75px;
-        }
+    #mainPaginaCinco {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #formPaginaCinco {
+        display: flex;
+        background-color: #811498;
+        border-radius: 12px;
+        width: 307px;
+        height: 500px;
+        flex-direction: column;
+    }
+
+    #preenchimento {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .campoPrenchimento {
+        border-radius: 8px;
+        width: 260px;
+        height: 40px;
+        margin-bottom: 0px;
+    }
+
+    #colunaPrenchimentoEsquerda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    #colunaPrenchimentoDireita {
+        width: 260px;
+        height: 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    #conteudoInput {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    #indicadorTextArea {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        padding-right: 0;
+        margin-right: 305px;
+    }
+
+    #botaoContatoEnviar {
+        width: 260px;
+        height: 46px;
+        border-radius: 12px;
+        position: relative;
+        top: 75px;
+    }
 
     /* fim página cinco*/
 
