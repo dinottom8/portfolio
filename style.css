@@ -651,7 +651,7 @@ label {
     /* Início Página Quatro*/
 
     #mainPaginaQuatro {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
     }
