@@ -81,5 +81,27 @@ $.ajax({
                 `
             )
         });
+        _data.exp_profissional.forEach(exp => {
+            $('#divExperienciaProfissional').append(
+                `
+                <div class="cardExperienciaProfissional">
+                    <img src="`
+                    + exp.image +
+                    `" alt="Imagem da certificação 1" class="classeImagemCertificacoes">
+                    <div>
+                        <div class="nomeCertificacao">`
+                        + exp.title +
+                        `</div>
+                        <div class="duracaoCertificacao">`
+                        + exp.inicio + " a " + exp.fim +
+                        `</div>
+                        <div class="institutoCertificacao">`
+                        + exp.instituicao +
+                        `</div>
+                    </div>
+                </div>
+                `
+            )
+        });
     }
 });
