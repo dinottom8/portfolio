@@ -30,5 +30,48 @@
             "image": "images/mario.webp",
             "text": "His name is Mario."
         }
+    ],
+    "certificacoes":[
+        {
+            "title": "Certificacao 1",
+            "image": "https://placehold.co/46",
+            "inicio": "1998",
+            "fim": "2002",
+            "instituicao": "Instituicao 1"
+        },
+        {
+            "title": "Certificacao 2",
+            "image": "https://placehold.co/46",
+            "inicio": "1998",
+            "fim": "2002",
+            "instituicao": "Instituicao 2"
+        },
+        {
+            "title": "Certificacao 3",
+            "image": "https://placehold.co/46",
+            "inicio": "1998",
+            "fim": "2002",
+            "instituicao": "Instituicao 3"
+        },{
+            "title": "Certificacao 1",
+            "image": "https://placehold.co/46",
+            "inicio": "1998",
+            "fim": "2002",
+            "instituicao": "Instituicao 1"
+        },
+        {
+            "title": "Certificacao 2",
+            "image": "https://placehold.co/46",
+            "inicio": "1998",
+            "fim": "2002",
+            "instituicao": "Instituicao 2"
+        },
+        {
+            "title": "Certificacao 3",
+            "image": "https://placehold.co/46",
+            "inicio": "1998",
+            "fim": "2002",
+            "instituicao": "Instituicao 3"
+        }
     ]
 }

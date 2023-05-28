@@ -34,8 +34,29 @@ $.ajax({
     dataType: "json",
     type: 'GET',
     success: function (_data) {
+        _data.certificacoes.forEach(cert => {
+            $('#divDosCertificados').append(
+                `
+                <div class="cardCertificado">
+                    <img src="`
+                    + cert.image +
+                    `" alt="Imagem da certificação 1" class="classeImagemCertificacoes">
+                    <div>
+                        <div class="nomeCertificacao">`
+                        + cert.title +
+                        `</div>
+                        <div class="duracaoCertificacao">`
+                        + cert.inicio + " a " + cert.fim +
+                        `</div>
+                        <div class="institutoCertificacao">`
+                        + cert.instituicao +
+                        `</div>
+                    </div>
+                </div>
+                `
+            )
+        });
         _data.projetos.forEach(projeto => {
-            console.log(projeto.text)
             $('swiper-container').append(
                 `
                 <swiper-slide>
@@ -51,8 +72,8 @@ $.ajax({
                             </h2>
                             <small class="card-text">
                                 `
-                                + projeto.text +
-                                `
+                + projeto.text +
+                `
                             </small>
                         </div>
                     </div>
