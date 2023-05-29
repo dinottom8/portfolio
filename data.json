@@ -116,5 +116,32 @@
             "fim": "2002",
             "instituicao": "Instituicao 3"
         }
+    ],
+    "competencias":[
+        {
+            "title":"Competência 1",
+            "image":"https://placehold.co/46",
+            "url":"https://placehold.co/46"
+        },
+        {
+            "title":"Competência 1",
+            "image":"https://placehold.co/46",
+            "url":"https://placehold.co/46"
+        },
+        {
+            "title":"Competência 1",
+            "image":"https://placehold.co/46",
+            "url":"https://placehold.co/46"
+        },
+        {
+            "title":"Competência 1",
+            "image":"https://placehold.co/46",
+            "url":"https://placehold.co/46"
+        },
+        {
+            "title":"Competência 1",
+            "image":"https://placehold.co/46",
+            "url":"https://placehold.co/46"
+        }
     ]
 }

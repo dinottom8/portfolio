@@ -103,5 +103,20 @@ $.ajax({
                 `
             )
         });
+        _data.competencias.forEach(comp => {
+            $('#divCardsCompetencias').append(
+                `
+                <a href="`
+                + comp.url +
+                `" class="cardCompetencia">
+                    <img src="`
+                    + comp.image +
+                    `" alt="`
+                    + comp.title +
+                    `" class="imagemCompetencia">
+                </a>
+                `
+            )
+        });
     }
 });
