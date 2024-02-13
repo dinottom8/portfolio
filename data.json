@@ -1,0 +1,57 @@
+{
+    "about-me": {
+        "greetings": "Hi, my name is Mateus Dinotto! How can I help you today?",
+        "from": "Brasil, Rio Grande do Norte",
+        "contact": [
+            {
+                "email": "dinottom8@gmail.com"
+            }, {
+                "linkedin": "https://www.linkedin.com/in/mateus-dinotto-2380061a7/"
+            }
+        ],
+        "roles": [
+            "shopify Dev.",
+            "Front-End Dev.",
+            "Wordpress Expert"
+        ],
+        "cover-letter": "I’ve been working with shopify roles for the last 2 years and with web development in general for 3.5 years. Pixel-perfect is my main adjective. Feel free to explore this portfolio and see my previous projects."
+    },
+    "skills": [
+        {
+            "name": "html",
+            "media": "./assets/images/html"
+        },
+        {
+            "name": "javascript",
+            "media": "./assets/images/javascript"
+        },
+        {
+            "name": "react",
+            "media": "./assets/images/react"
+        },
+        {
+            "name": "typescript",
+            "media": "./assets/images/typescript"
+        },
+        {
+            "name": "sass",
+            "media": "./assets/images/sass"
+        },
+        {
+            "name": "shopify/liquid",
+            "media": "./assets/images/shopify"
+        },
+        {
+            "name": "figma",
+            "media": "./assets/images/figma"
+        },
+        {
+            "name": "css",
+            "media": "./assets/images/css"
+        },
+        {
+            "name": "jquery",
+            "media": "./assets/images/jquery"
+        }
+    ]
+}
