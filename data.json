@@ -1,57 +1,51 @@
-{
-    "about-me": {
-        "greetings": "Hi, my name is Mateus Dinotto! How can I help you today?",
-        "from": "Brasil, Rio Grande do Norte",
-        "contact": [
-            {
-                "email": "dinottom8@gmail.com"
-            }, {
-                "linkedin": "https://www.linkedin.com/in/mateus-dinotto-2380061a7/"
-            }
-        ],
-        "roles": [
-            "shopify Dev.",
-            "Front-End Dev.",
-            "Wordpress Expert"
-        ],
-        "cover-letter": "I’ve been working with shopify roles for the last 2 years and with web development in general for 3.5 years. Pixel-perfect is my main adjective. Feel free to explore this portfolio and see my previous projects."
-    },
-    "skills": [
+
+    [
         {
-            "name": "html",
-            "media": "./assets/images/html"
+            "name": "HTML",
+            "logourl": "",
+            "start": "",
+            "text": ""
         },
         {
-            "name": "javascript",
-            "media": "./assets/images/javascript"
+            "name": "CSS",
+            "logourl": "",
+            "start": "",
+            "text": ""
         },
         {
-            "name": "react",
-            "media": "./assets/images/react"
+            "name": "JavaScript",
+            "logourl": "",
+            "start": "",
+            "text": ""
         },
         {
-            "name": "typescript",
-            "media": "./assets/images/typescript"
+            "name": "ReactJS",
+            "logourl": "",
+            "start": "",
+            "text": ""
         },
         {
-            "name": "sass",
-            "media": "./assets/images/sass"
+            "name": "Shopify/Liquid",
+            "logourl": "",
+            "start": "",
+            "text": ""
         },
         {
-            "name": "shopify/liquid",
-            "media": "./assets/images/shopify"
+            "name": "SASS",
+            "logourl": "",
+            "start": "",
+            "text": ""
         },
         {
-            "name": "figma",
-            "media": "./assets/images/figma"
+            "name": "Figma",
+            "logourl": "",
+            "start": "",
+            "text": ""
         },
         {
-            "name": "css",
-            "media": "./assets/images/css"
-        },
-        {
-            "name": "jquery",
-            "media": "./assets/images/jquery"
+            "name": "WordPress",
+            "logourl": "",
+            "start": "",
+            "text": ""
         }
     ]
-}
