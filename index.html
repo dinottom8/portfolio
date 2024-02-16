@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateus Dinotto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -51,7 +52,51 @@
 
         <!-- Page 2 -->
 
-            <main class="second-page"></main>
+            <main class="second-page">
+                
+                <div class="content-second-page">
+                    <h1 id="skills-title">Skills</h1>
+                    <p class="text-second-page">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                    <div class="swiper mySwiper">
+                        <div class="parent-skill-cards swiper-wrapper">
+
+                            <div class="skill-card swiper-slide">
+                                <img src="http://www.placeholder.com/80" alt="">
+                                <h2>Shopify Liquid</h2>
+                                <div class="text-skill-card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quos sunt numquam distinctio dignissimos. Ad ex possimus saepe? Minima omnis maiores amet asperiores sequi sint voluptatum, nostrum aliquid in dignissimos?</div>
+                            </div>
+                            <div class="skill-card swiper-slide">
+                                <img src="http://www.placeholder.com/80" alt="">
+                                <h2>WordPress</h2>
+                                <div class="text-skill-card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quos sunt numquam distinctio dignissimos. Ad ex possimus saepe? Minima omnis maiores amet asperiores sequi sint voluptatum, nostrum aliquid in dignissimos?</div>
+                            </div>
+                            <div class="skill-card swiper-slide">
+                                <img src="http://www.placeholder.com/80" alt="">
+                                <h2>HTML</h2>
+                                <div class="text-skill-card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quos sunt numquam distinctio dignissimos. Ad ex possimus saepe? Minima omnis maiores amet asperiores sequi sint voluptatum, nostrum aliquid in dignissimos?</div>
+                            </div>
+                            <div class="skill-card swiper-slide">
+                                <img src="http://www.placeholder.com/80" alt="">
+                                <h2>CSS</h2>
+                                <div class="text-skill-card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quos sunt numquam distinctio dignissimos. Ad ex possimus saepe? Minima omnis maiores amet asperiores sequi sint voluptatum, nostrum aliquid in dignissimos?</div>
+                            </div>
+                            <div class="skill-card swiper-slide">
+                                <img src="http://www.placeholder.com/80" alt="">
+                                <h2>JavaScript</h2>
+                                <div class="text-skill-card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quos sunt numquam distinctio dignissimos. Ad ex possimus saepe? Minima omnis maiores amet asperiores sequi sint voluptatum, nostrum aliquid in dignissimos?</div>
+                            </div>
+                            <div class="skill-card swiper-slide">
+                                <img src="http://www.placeholder.com/80" alt="">
+                                <h2>SCSS</h2>
+                                <div class="text-skill-card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quos sunt numquam distinctio dignissimos. Ad ex possimus saepe? Minima omnis maiores amet asperiores sequi sint voluptatum, nostrum aliquid in dignissimos?</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </main>
 
         <!-- Page 3 -->
 
@@ -59,13 +104,14 @@
 
         <!-- Stuffs in an abosulte position -->
 
-            <div class="social-links">
-                <img src="assets/images/linkedin-icon.svg" alt="LinkeHin Icon">
-                <img src="assets/images/github-icon.svg" alt="GitHub Icon">
-                <img src="assets/images/mail-icon.svg" alt="Mail Icon">
+            <div class="social-links-div">
+                <img src="images/linkedin-icon.svg" alt="LinkeHin Icon" class="social-link">
+                <img src="images/github-icon.svg" alt="GitHub Icon" class="social-link">
+                <img src="images/envelope-icon.svg" alt="Mail Icon" class="social-link">
             </div>
 
             <nav class="nav-bar">
+                <div class="nav-bar-selection"></div>
                 <div class="nav-icon"></div>
                 <div class="nav-icon"></div>
                 <div class="nav-icon"></div>
@@ -74,5 +120,21 @@
     </section>
     
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "horizontal",
+        slidesPerView: 2.3,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 </body>
 </html>

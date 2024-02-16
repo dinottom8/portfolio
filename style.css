@@ -101,21 +101,112 @@ body {
             cursor: pointer;
         }
 
-        .social-links {
-            display: none;
-        }
-
-        .nav-bar {
-            display: none;
-        }
-
 /* Second Page */
 
     .second-page {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100vb;
-        background-color: rgba(0, 255, 255, 0.322);
     }
+
+    .content-second-page {
+        width: 1096px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 38px;
+    }
+
+    #skills-title {
+        width: 100% !important;
+    }
+
+    .parent-skill-cards {
+        display: flex;
+        gap: 24px;
+    }
+
+    .skill-card {
+        background-color: #fff;
+        width: 470px;
+        height: 388px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 24px;
+        padding-left: 64px;
+        gap: 24px;
+    }
+
+    .swiper {
+        width: 1096px;
+        height: 388px;
+    }
+
+    .text-second-page {
+        max-width: 1096px;
+    }
+
+/* Global Elements*/
+
+    /* social icons */
+
+        .social-links-div {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            position: fixed;
+            top: 42vh;
+            left: 48px;
+        }
+        
+        .social-link {
+            width: 24px;
+            height: 24px;
+            transition: .1s ease;
+            cursor: pointer;
+        }
+
+        .social-link:hover {
+            transition: .1s ease;
+            transform: scale(103%);
+        }
+    
+    /* nav bar */
+
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 44px;
+            position: fixed;
+            right: 48px;
+            top: 44vh;
+        }
+
+        .nav-icon {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .2s ease;
+        }
+
+        .nav-bar-selection {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            position: absolute;
+        }
+              
+
+        .nav-icon:hover {
+            transition: .2s ease;
+            transform: scale(114%);
+            background-color: #fff;
+        }
