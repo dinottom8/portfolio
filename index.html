@@ -6,6 +6,7 @@
     <title>Mateus Dinotto</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
 
@@ -13,7 +14,7 @@
 
         <!-- Page 1 -->
 
-            <main class="first-page">
+            <main class="first-page" id="first-page-pagination">
 
                 <!--Creates the profile image and the nationality message -->
                 
@@ -52,7 +53,7 @@
 
         <!-- Page 2 -->
 
-            <main class="second-page">
+            <main class="second-page" id="second-page-pagination">
                 
                 <div class="content-second-page">
                     <h1 id="skills-title">Skills</h1>
@@ -100,21 +101,23 @@
 
         <!-- Page 3 -->
 
-            <main></main>
+            <main class="third-page" id="third-page-pagination">
+
+            </main>
 
         <!-- Stuffs in an abosulte position -->
 
             <div class="social-links-div">
-                <img src="images/linkedin-icon.svg" alt="LinkeHin Icon" class="social-link">
-                <img src="images/github-icon.svg" alt="GitHub Icon" class="social-link">
-                <img src="images/envelope-icon.svg" alt="Mail Icon" class="social-link">
+                <a target="_blank" href="https://www.linkedin.com/in/mateus-dinotto-2380061a7/"><img src="images/linkedin-icon.svg" alt="LinkeHin Icon" class="social-link"></a>
+                <a target="_blank" href="https://github.com/dinottom8"><img src="images/github-icon.svg" alt="GitHub Icon" class="social-link"></a>
+                <a target="_blank" href="mailto:dinottom8@gmail.com"><img src="images/envelope-icon.svg" alt="Mail Icon" class="social-link"></a>
             </div>
 
             <nav class="nav-bar">
                 <div class="nav-bar-selection"></div>
-                <div class="nav-icon"></div>
-                <div class="nav-icon"></div>
-                <div class="nav-icon"></div>
+                <a href="#first-page-pagination" id="first-nav-icon"><div class="nav-icon"></div></a>
+                <a href="#second-page-pagination" id="second-nav-icon"><div class="nav-icon"></div></a>
+                <a href="#third-page-pagination" id="third-nav-icon"><div class="nav-icon"></div></a>
             </nav>
 
     </section>

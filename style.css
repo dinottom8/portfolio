@@ -15,6 +15,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* First section */
 
     .first-page {
@@ -188,6 +192,18 @@ body {
             top: 44vh;
         }
 
+        .nav-bar-selection {
+            width: 48px;
+            height: 48px;
+            border: 6px solid transparent; /* Set the border to be transparent */
+            border-image: linear-gradient(to right, #CC112C, #FCBE30); /* Set the gradient */
+            border-image-slice: 1; /* Slice the border image into 9 pieces (1x1 grid) */
+            position: fixed;
+            right: 30px;
+            top: 42vh;
+            transition: top ease-out 0.2s;
+        }
+
         .nav-icon {
             width: 12px;
             height: 12px;
@@ -196,14 +212,6 @@ body {
             cursor: pointer;
             transition: .2s ease;
         }
-
-        .nav-bar-selection {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            position: absolute;
-        }
-              
 
         .nav-icon:hover {
             transition: .2s ease;
