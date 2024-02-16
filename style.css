@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body {
+    width: 1920px;
+    height: 3240px;
+    background-image: url("images/background-image.png");
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* First section */
+
+    .first-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        gap: 48px;
+        height: 100vb;
+        margin: auto;
+    }
+
+    /* Profile photo and nationality */
+
+        .picture-profile-and-nationality {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .profilePhoto {
+            border-radius: 12px;
+        }
+
+        span {
+            font-size: 18px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+    /* Title, cover letter and buttons */
+
+        .greetings-title-and-text {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            color: #fff;
+            max-width: 728px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .greetings-message {
+            max-width: 664px;
+        }
+
+        .buttons-first-page {
+            display: flex;
+            gap: 24px;
+        }
+
+        button {
+            width: 300px;
+            height: 60px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 16px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 500;
+            transition: ease .2s;
+        }
+
+        button:hover {
+            background-color: #000;
+            color: #fff;
+            transform: scale(98%);
+            transition: ease-in .1s;
+            cursor: pointer;
+        }
+
+        .social-links {
+            display: none;
+        }
+
+        .nav-bar {
+            display: none;
+        }
+
+/* Second Page */
+
+    .second-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vb;
+        background-color: rgba(0, 255, 255, 0.322);
+    }
