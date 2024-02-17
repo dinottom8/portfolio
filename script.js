@@ -1,4 +1,7 @@
 let nav_icons = [...document.querySelectorAll(".nav-icon")];
+let parent_skill_cards = document.querySelector(".projects-github");
+
+console.log(parent_skill_cards)
 
 nav_icons.forEach((icon) => {
 
@@ -16,35 +19,34 @@ nav_icons.forEach((icon) => {
 
 });
 
+function getApiGitHub() {
 
-$(document).ready(function() {
-    // Select the elements you want to make appear on scroll
-    var hiddenElements = $('.hidden-element');
+    fetch('https://api.github.com/users/dinottom8/repos').then(
+        async res => {
 
-    // Set a flag to avoid repetitive animations
-    var animationFlag = false;
-
-    // Function to handle the scroll event
-    function handleScroll() {
-        var scrollPosition = $(window).scrollTop();
-        var windowHeight = $(window).height();
-
-        // Loop through each hidden element
-        hiddenElements.each(function() {
-            var elementPosition = $(this).offset().top;
-
-            // Check if the element is in the viewport
-            if (elementPosition < scrollPosition + windowHeight * 0.8 && !animationFlag) {
-                // Add a class to change opacity and trigger the transition
-                $(this).addClass('visible-element');
-                animationFlag = true; // Set the flag to true to avoid repetitive animations
+            if(!res.ok){
+                throw new Error(res.status)
             }
-        });
-    }
 
-    // Attach the handleScroll function to the scroll event
-    $(window).scroll(handleScroll);
+            var data = await res.json()
 
-    // Call the handleScroll function on page load to check if elements are already in the viewport
-    handleScroll();
-});
+            data.map(item => {
+                let project = document.createElement("div");
+                project.classList.add("swiper-slide")
+                project.classList.add("skill-card")
+                project.innerHTML = `
+                    <h2>${item.name}</h2>
+                    <span>Updated at: ${item.updated_at}</span>
+                    <div class="text-skill-card">${item.description}</div>
+                    <img src="http://www.placeholder.com/80" alt="Imagem do projeto">
+                `
+
+                parent_skill_cards.appendChild(project)
+
+            })
+
+        }).catch(e => console.log(e))
+
+}
+
+getApiGitHub()
