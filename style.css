@@ -134,7 +134,7 @@ html {
 
     .skill-card {
         background-color: #fff;
-        width: 533px !important;
+        width: 533px;
         height: 388px;
         border-radius: 12px;
         display: flex;

@@ -106,10 +106,29 @@
                 <div class="content-third-page">
                     <h1 id="projects-title">Projects</h1>
                     <p class="text-second-page">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="buttons-first-page" style="justify-content: flex-end;">
+
+                        <button class="button-third-page">Web3 Projects</button>
+                        <button class="button-third-page">React Projects</button>
+                        <button class="button-third-page">Shopify Projects</button>
+
+                    </div>
                     
                     <div class="swiper mySwiper2">
-                        <div class="parent-skill-cards swiper-wrapper projects-github">
+                        <div class="parent-skill-cards swiper-wrapper shopify-projects">
                             
+                        </div>
+                    </div>
+
+                    <div class="swiper mySwiper3" style="display: none;">
+                        <div class="parent-skill-cards swiper-wrapper react-projects">
+                            
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper4" style="display: none;">
+                        <div class="parent-skill-cards swiper-wrapper web3-projects">
+                        
                         </div>
                     </div>
                 </div>
@@ -136,22 +155,18 @@
     <script src="script.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        direction: "horizontal",
-        slidesPerView: "2.3",
-        spaceBetween: 30,
-        mousewheel: true
-      });
+        
+        /* Creates the swiper for the second page*/
+        var swiper = new Swiper(".mySwiper", {
+            direction: "horizontal",
+            slidesPerView: "2.3",
+            spaceBetween: 30,
+            mousewheel: true
+        });
 
-      var swiper2 = new Swiper(".mySwiper2", {
-        direction: "horizontal",
-        slidesPerView: "2.3",
-        spaceBetween: 30,
-        mousewheel: true
-      });
+        document.querySelector('.mySwiper').classList.add('reverse');
+
 
     </script>
 </body>
