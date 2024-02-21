@@ -1,19 +1,22 @@
-let nav_icons = [...document.querySelectorAll(".nav-icon")];
 let react_projects = document.querySelector(".react-projects");
 let web3_projects = document.querySelector(".web3-projects");
 let shopify_projects = document.querySelector(".shopify-projects");
+let buttons_third_page = [...document.querySelectorAll(".button-third-page")];
+
+let nav_icons = [...document.querySelectorAll(".nav-icon")];
+let selector = document.querySelector(".selector-navigator");
+
+alignSelector(nav_icons[0]);
 
 nav_icons.forEach((icon) => {
     icon.addEventListener("click", () => {
-        if (icon == nav_icons[0]) {
-            document.querySelector(".nav-bar-selection").style.top = "42vh";
-        } else if (icon == nav_icons[1]) {
-            document.querySelector(".nav-bar-selection").style.top = "48.2vh";
-        } else {
-            document.querySelector(".nav-bar-selection").style.top = "54.3vh";
-        }
+        alignSelector(icon);
     });
 });
+
+function alignSelector(icon) {
+    selector.style.transform = `translate(-50%, -50%) translate(${icon.offsetLeft + icon.offsetWidth / 2}px, ${icon.offsetTop + icon.offsetHeight / 2}px)`;
+}
 
 function getApiGitHub() {
     fetch('https://api.github.com/users/dinottom8/repos')
@@ -87,8 +90,6 @@ function getApiGitHub() {
 }
 
 getApiGitHub();
-
-let buttons_third_page = [...document.querySelectorAll(".button-third-page")];
 
 buttons_third_page.forEach((el)=>{
     el.addEventListener("click", (tgt)=>{
